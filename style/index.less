@@ -1,8 +1,9 @@
 body {
 	background: #eee;
-	font-size: 12pt;
+	font-size: 14pt;
+	line-height: 1.35;
 	min-width: 320px;
-	margin: 0;	
+	margin: 0;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -16,6 +17,7 @@ h1, h2 {
 h2, h3, h4 {
 	font-family: "Raleway";
 	font-weight: 600;
+	margin-bottom: 1rem;
 }
 
 h2 {
@@ -23,11 +25,15 @@ h2 {
 }
 
 h3 {
-	
+
 }
 
 h4 {
-	
+
+}
+
+p {
+	margin-bottom: 1em;
 }
 
 
@@ -95,15 +101,6 @@ nav {
 		display: inline-block;
 		margin: 1em 0.25em;
 	}
-	a {
-		box-shadow: inset 0 -0.5em 1em 0.2em rgba(0,0,0,0.1);
-		background: #888;
-		color: white;
-		padding: 0.5em 0.75em;
-		text-decoration: none;
-		outline: none;
-		border-radius: 1em;
-	}
 }
 
 img {
@@ -141,6 +138,33 @@ img {
 
 
 
+.button {
+	box-shadow: inset 0 -0.5em 1em 0.2em rgba(0,0,0,0.1);
+	background: #aaa;
+	border-bottom: 2pt solid #777;
+	color: white;
+	font-family: "Raleway";
+	padding: 0.5em 0.75em;
+	text-decoration: none;
+	outline: none;
+	border-radius: 1em;
+	&:hover {
+		background: #999;
+	}
+	&:active {
+		background: #ccc;
+
+	}
+	&.big {
+		font-size: 1.5em;
+	}
+	&.alt {
+		background: magenta;
+	}
+}
+
+
+
 /* media queries */
 @media screen and (max-width: 559px) {
 	body {
@@ -174,11 +198,9 @@ img {
 			box-sizing: border-box;
 		}
 	}
-} 
+}
 @media screen and (min-width: 940px) {
 	section {
 		padding: 4em 20%;
 	}
-} 
-
-
+}
