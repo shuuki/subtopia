@@ -1,0 +1,10 @@
+{
+	"globals" : {
+		"title" : "SUBTOPIA XYZ",
+		"description" : "Shabby chic VHS listicle stumptown affogato lumbersexual selvage forage meh readymade four dollar toast. Drinking vinegar hella man braid helvetica cardigan."
+	},
+	"service" : {
+		"analytics": "UA-XXXXXXXX-X"
+	},
+	"domains" : ["subtopia.xyz"]
+}

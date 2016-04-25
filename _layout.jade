@@ -1,6 +1,19 @@
 doctype
-html
+html(itemscope itemtype="http://schema.org/CreativeWork" lang="en")
   head
-    link(rel="stylesheet" href="/main.css")
+    // meta
+    title #{title}
+    meta(description="#{description}")
+    link(href="favicon.ico" rel="icon" type="image/x-icon" )
+    // display
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    // styles
+    link(href="https://fonts.googleapis.com/css?family=Rancho|Raleway:600" rel="stylesheet" type="text/css")
+    link(href="style/reset.css" rel="stylesheet")
+    link(href="style/index.css" rel="stylesheet")
   body
+    // content
     != yield
+    // scripts
+    script(src="script/library/jquery-2.2.0.min.js")
+    script(src="script/index.js")
